@@ -19,8 +19,7 @@ services:
       - DEBUG=1
     depends_on:
       - db
-    tty: true
-    command: tail -f /dev/null
+    command: uvicorn main:app --host 0.0.0.0 --port 8000
   db:
     image: postgres:13-alpine
     ports:
