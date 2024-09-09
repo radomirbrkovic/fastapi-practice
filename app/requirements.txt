@@ -11,3 +11,4 @@ passlib
 pytest
 httpx
 pytest-asyncio
+pyyaml
