@@ -1,9 +1,9 @@
 from sqlalchemy import  create_engine, text
 from sqlalchemy.pool import StaticPool
 from sqlalchemy.orm import sessionmaker
-from ..infastructure.database import Base
-from ..main import app
-from ..models.user import  Users
+from infastructure.database import Base
+from main import app
+from models.user import  Users
 from fastapi.testclient import TestClient
 from passlib.context import CryptContext
 import pytest
